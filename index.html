@@ -1,6 +1,427 @@
-<head>
-mkics temp page!
-</head>
+<html>
 <body>
-Hello, World!
+    <div id="wrapper">
+        <!-- ########## HEADER ########## -->
+        <div id="tab1Home"><p><a href="#container_wrap">본문내용 바로가기</a></p></div>
+        <div id="header_wrap">
+            <div class="header">				
+                <!--<h1 style="background:none;width:0px;"><a style="font-size: 0; background-color:white;background: url('/images/renew/main/renew_toplogo.png') 0 0 no-repeat; width: 282px; height: 52px; position: absolute; " href="https://www.kics.go.kr/index.html" target="_top">법무부 형사사법포털</a></h1>-->
+                <h1 style="background:none;width:0px;"><a style="margin-top:6px;font-size: 0; background-color:white;background: url('/images/renew/main/renew_toplogo_01.png') 0 0 no-repeat; width: 280px; height: 70px; position: absolute; " href="https://www.kics.go.kr/index.html" target="_top">법무부 형사사법포털</a></h1>                
+                
+                 
+                <ul class="header_nav">
+
+                    <li class="header_login"><a href="javascript:titleLink('회원로그인');">로그인</a></li>
+                    <li><a href="javascript:titleLink('회원가입','?viewid=userRNMCFM');">회원가입</a></li>
+                    <li><a href="javascript:popUpMain(getUrlByTitle('홈페이지 이용안내|h'), 970, 740, 0, 300)" title="새창 열림">도움말</a></li>
+                    <!--<li><a href="#container_wrap">본문내용 바로가기</a></li>-->
+                    <li><a href="https://fgn.kics.go.kr/en/">English</a></li>
+
+                    <li class="header_search">
+					    <label for="sttWrdsQueryVal" style="font-size:0px;">법령용어검색</label>
+                        <input id="sttWrdsQueryVal" type="text" title="법령용어검색" placeholder="법령용어 검색" onKeyDown="if ( event.keyCode == '13') lsTrmScSearch();">
+                        <a href="javascript:lsTrmScSearch();" title="새창열림">검색</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- GNB -->
+
+            <div class="header_gnb_wrap" style="min-width:1500px;">
+                <div class="header_gnb_box">
+                    <div class="header_gnb_area">
+                        <ul>
+                            <li class="header_gnb_group ">
+                                <a href="javascript:titleLink('형사사법포털 소개');">처음 오셨나요?</a>
+                                <ul class="header_gnb_sub">
+                                    <li class="active"><a href="javascript:titleLink('형사사법포털 소개');">형사사법포털 소개</a></li>
+                                    <li><a href="javascript:titleLink('형사사건 소개');">형사사건 소개</a></li>
+                                    <li><a href="javascript:titleLink('기관별 업무 소개');">기관별 업무 소개</a></li>
+                                    <li><a href="javascript:titleLink('전자약식 소개');">전자약식 소개</a></li>
+                                </ul>
+                            </li>
+                            <li class="header_gnb_group">
+                                <a href="javascript:titleLink('사건조회 안내');">사건조회</a>
+                                <ul class="header_gnb_sub">
+                                    <li><a href="javascript:titleLink('사건조회 안내');">사건조회</a></li>
+                                    <li><a href="javascript:titleLink('벌과금조회');">벌과금조회</a></li>
+                                    <li><a href="javascript:titleLink('가납금환급조회 및 신청');">가납금환급 조회 및 신청</a></li>
+                                    <li><a href="javascript:titleLink('재판서 및 통지서 조회');">재판서 및 통지서 조회</a></li>
+                                </ul>
+                            </li>
+                            <li class="header_gnb_group">
+                                <a href="javascript:titleLink('민원신청');">전자민원신청</a>
+                                <ul class="header_gnb_sub">
+                                    <li><a href="javascript:titleLink('민원신청');">민원신청</a></li>
+                                    <li><a href="javascript:titleLink('민원서식');">민원서식</a></li>
+                                    <li><a href="javascript:titleLink('자주가는 민원서비스');">자주가는 민원서비스</a></li>
+                                    <li><a href="javascript:titleLink('발급문서 진위확인');">발급문서 진위확인</a></li>
+                                </ul>
+                            </li>
+                            <li class="header_gnb_group">
+                                <a href="javascript:titleLink('지원제도 및 기관안내');">범죄피해자지원</a>
+                                <ul class="header_gnb_sub">
+                                    <li><a href="javascript:titleLink('지원제도 및 기관안내');">지원제도 및 기관안내</a></li>
+                                    <li><a href="javascript:titleLink('어떤 피해를 입으셨나요?');">어떤 피해를 입으셨나요?</a></li>
+                                    <li><a href="javascript:titleLink('어떤 기관을 찾으시나요?');">어떤 기관을 찾으시나요?</a></li>
+                                    <li><a href="javascript:titleLink('피해유형별 대처요령');">피해유형별 대처요령</a></li>
+                                    <li><a href="javascript:titleLink('피해자 사건조회');">피해자 사건조회</a></li>
+                                </ul>
+                            </li>
+                            <li class="header_gnb_group">
+                                <a href="javascript:titleLink('공지사항');">뉴스와 국민참여</a>
+                                <ul class="header_gnb_sub">
+                                    <li><a href="javascript:titleLink('공지사항');">공지사항</a></li>
+                                    <li><a href="javascript:titleLink('뉴스데스크');">뉴스데스크</a></li>
+                                    <li><a href="javascript:titleLink('범죄신고');">범죄신고</a></li>
+                                    <li><a href="javascript:titleLink('여론광장');">여론광장</a></li>
+                                    <li><a href="javascript:titleLink('정보공개');">정보공개</a></li>
+                                    <li><a href="javascript:titleLink('형사사법 정보안내');">형사사법 정보안내</a></li>
+                                    <li><a href="javascript:titleLink('형사사법 블로그 소개');">형사사법 블로그소개</a></li>
+                                    <li><a href="javascript:titleLink('형사사법 사이트 링크');">형사사법 사이트링크</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--// GNB -->
+        </div>
+        <!--// ########## HEADER ########## -->
+        
+        <!-- ########## CONTENTS ########## -->
+        <div id="container_wrap">
+            <div class="content_wrap pd_cont">
+                <ul class="quick_btn_group">
+                    <li>
+                        <a href="javascript:titleLink('사건조회 안내');">
+                            <strong>사건조회</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:titleLink('민원신청');">
+                            <strong>민원신청</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:titleLink('벌과금조회');">
+                            <strong>벌과금조회</strong>
+                        </a>
+                    </li>                    
+                    <li>
+                        <a href="javascript:titleLink('재판서 및 통지서 조회');">
+                            <strong>전자약식명령등본조회</strong>
+                        </a>
+                    </li>
+                </ul>
+                
+                <dl style="position: absolute; left: 640px; top: 100px; z-index: 1;">
+                    <dt style="font-size: 0;display:none;background: url('/images/renew/main/renew_main_tlt.png') 0 0 no-repeat; height: 76px; width: 550px;">국민과 함께하는 형사사법 형사사법포털이 만들어갑니다.</dt>
+                    <dd style="font-size: 0;height: 285px;margin-top: -20px; background: url(/images/renew/main/renew_img_kics_3.png) 0 0 no-repeat; width: 550px;">
+                        KICS : Korea Information System of Criminal Justice Services <br>
+                        해양경찰, 경찰, 검찰, 법원, 법무부
+                    </dd>
+                </dl>                
+            </div>
+            <!-- contBlock_1 : 알림/공지사항+자주묻는질문/안내버튼그룹 -->
+            <div class="content_wrap pd_cont">
+                <!-- 알림 -->
+                <div class="content_box">
+                    <dl class="cont_banner">
+
+                        <dt>
+                            <span class="cont_tlt">알림</span>
+                            <ul>
+                                <li><a href="javascript:f_playNtc('play');"  class="btn_play">시작</a></li>
+                                <li><a href="javascript:f_playNtc('pause');" class="btn_pause">일시정지</a></li>
+                                <li class="banner_num" id="banner_num"><strong>1</strong> / 13</li>
+                            </ul>
+                        </dt>
+                        <dd class="banner_img">
+							
+							
+
+							<p id="gm1" style=""><a href="https://www.scourt.go.kr/portal/notice/ckt/ckt01.jsp" target="_blank" onMouseOver="f_mouseEvent('gm1');" onMouseOut="f_mouseEvent('');" title="대한민국 법원 전자공탁 공익을 위한 공탁 가깝게 편리하게 형사공탁의 절차와 형사공탁 안내. 링크"><img src="/images/renew/main/banner007.png" alt="대한민국 법원 전자공탁 공익을 위한 공탁 가깝게 편리하게 형사공탁의 절차와 형사공탁 안내. 링크"></a></p>
+
+							<p id="gm2" style="display:none"><a href="/portal/site/public2012/menuitem.550edf9da67b3ea7119c3981ec2007a0/?viewID=detail&amp;bdctnSeqno=1932" target="" onMouseOver="f_mouseEvent('gm2');" onMouseOut="f_mouseEvent('');" title="형사사법포털 형사사건의 모든것! 언제,어디서나 편리하게 이용하세요!. 링크"><img src="/images/renew/main/banner005.jpg" alt="형사사법포털 형사사건의 모든것! 언제,어디서나 편리하게 이용하세요!. 링크"></a></p>
+
+							<p id="gm3" style="display:none"><a href="/portal/site/public2012/menuitem.fe6fe06ab3a93ea7119c3981ec2007a0/?viewID=detail&amp;bdctnSeqno=1543" target="" onMouseOver="f_mouseEvent('gm3');" onMouseOut="f_mouseEvent('');" title="형사사법포털 간편인증 서비스 개시 안내. 링크"><img src="/images/renew/main/banner003.png" alt="형사사법포털 간편인증 서비스 개시 안내. 링크"></a></p>
+
+							<p id="gm4" style="display:none"><a href="/portal/site/public2012/menuitem.fe6fe06ab3a93ea7119c3981ec2007a0/?viewID=detail&amp;bdctnSeqno=1529" target="" onMouseOver="f_mouseEvent('gm4');" onMouseOut="f_mouseEvent('');" title="형사사법포털 사칭 피싱 사이트 주의 안내 주의사항및 신고방법을 알려드립니다. 링크"><img src="/images/renew/main/banner001.png" alt="형사사법포털 사칭 피싱 사이트 주의 안내 주의사항및 신고방법을 알려드립니다. 링크"></a></p>
+
+							<p id="gm5" style="display:none"><a href="javascript:popUp('/portal/jsp/popup/kics2024.jsp', 570, 680, 30, 300)" target="" onMouseOver="f_mouseEvent('gm5');" onMouseOut="f_mouseEvent('');" title="어려운 형사절차를 한 번에! 국민의 소중한 시간을 돌려드립니다. 2024 차세대 형사사법정보시스템(KICS)구축 새창열림"><img src="/images/renew/main/kics2024.png" alt="어려운 형사절차를 한 번에! 국민의 소중한 시간을 돌려드립니다. 2024 차세대 형사사법정보시스템(KICS)구축 새창열림"></a></p>
+
+							<p id="gm6" style="display:none"><a href="javascript:popUpMain_new('/portal/jsp/popup/kics_movie5.jsp', 700, 760, 30, 300)" target="" onMouseOver="f_mouseEvent('gm6');" onMouseOut="f_mouseEvent('');" title="형사절차 전자문서법 자문위원회, 법무부 형사사법공통시스템 운영단, 2020.0918(금), 장소:정부과천청사 새창열림"><img src="/images/renew/main/kics_movie5.png" alt="형사절차 전자문서법 자문위원회, 법무부 형사사법공통시스템 운영단, 2020.0918(금), 장소:정부과천청사 새창열림"></a></p>
+
+							<p id="gm7" style="display:none"><a href="https://koreha.or.kr/sub/02_01.do?MN1=3&MN2=16&MN3=207&MN=207" target="_blank" onMouseOver="f_mouseEvent('gm7');" onMouseOut="f_mouseEvent('');" title="당신의 새 출발을 응원합니다. 사회복귀 지원안내, 한국법무보호복지공 새창열림"><img src="/images/renew/main/koreha_3_16_207_207.jpg" alt="당신의 새 출발을 응원합니다. 사회복귀 지원안내, 한국법무보호복지공 새창열림"></a></p>
+
+							<p id="gm8" style="display:none"><a href="javascript:popUpMain_new('/portal/jsp/popup/acrc_movie.jsp', 700, 760, 30, 300)" target="" onMouseOver="f_mouseEvent('gm8');" onMouseOut="f_mouseEvent('');" title="지금 당신도....원하나요?  EBS 청렴캠페인 새창열림"><img src="/images/renew/main/banner_acrc-01.jpg" alt="지금 당신도....원하나요?  EBS 청렴캠페인 새창열림"></a></p>
+
+							<p id="gm9" style="display:none"><a href="https://www.clean.go.kr/index.es?sid=a1" target="_blank" onMouseOver="f_mouseEvent('gm9');" onMouseOut="f_mouseEvent('');" title="국민권익위원회 세상을 바꾸난 용기 부패·공익신고 새창열림"><img src="/images/renew/main/jindo.jpg" alt="국민권익위원회 세상을 바꾸난 용기 부패·공익신고 새창열림"></a></p>
+
+							<p id="gm10" style="display:none"><a href="http://www.gov.kr/" target="_blank" onMouseOver="f_mouseEvent('gm10');" onMouseOut="f_mouseEvent('');" title="정부24 한눈에 보는 정부 서비스 새창열림"><img src="/images/renew/main/gov24Banner.jpg" alt="정부24 한눈에 보는 정부 서비스 새창열림"></a></p>
+
+							<p id="gm11" style="display:none"><a href="javascript:popUp('http://www.mois.go.kr/frt/sub/popup/p_taegugki_banner/screen.do', 780, 740, 30, 300)" target="" onMouseOver="f_mouseEvent('gm11');" onMouseOut="f_mouseEvent('');" title="국가상징 알아보기 새창열림"><img src="/images/renew/main/sysChkNtc.jpg" alt="국가상징 알아보기 새창열림"></a></p>
+
+							<p id="gm12" style="display:none"><a href="javascript:popUp('/portal/jsp/popup/kics_movie3.jsp', 720, 640, 30, 300)" target="" onMouseOver="f_mouseEvent('gm12');" onMouseOut="f_mouseEvent('');" title="형사사법포털 카툰 KICS 새창열림"><img src="/images/renew/main/prtlEtcNtc1.jpg" alt="형사사법포털 카툰 KICS 새창열림"></a></p>
+
+							<p id="gm13" style="display:none"><a href="javascript:popUp('/portal/jsp/popup/kics_movie2.jsp', 670, 660, 30, 300)" target="" onMouseOver="f_mouseEvent('gm13');" onMouseOut="f_mouseEvent('');" title="범죄피해자지원기관이 궁금하다면? 이제는 KICS 법무부 형사사법포털 새창열림"><img src="/images/renew/main/prtlEtcNtc2.jpg" alt="범죄피해자지원기관이 궁금하다면? 이제는 KICS 법무부 형사사법포털 새창열림"></a></p>
+
+                        </dd>
+                        <dd class="banner_nav_group">
+
+								<a href="https://www.scourt.go.kr/portal/notice/ckt/ckt01.jsp" style="width:15px;margin:0 3.5px !important;" target="_blank" class="active" id="gp1" onfocus="activeGNB('gm1'); f_mouseEvent('gm1');" onblur="f_mouseEvent('');" onMouseOver="activeGNB('gm1'); f_mouseEvent('gm1');" onMouseOut="f_mouseEvent('');" title="대한민국 법원 전자공탁 공익을 위한 공탁 가깝게 편리하게 형사공탁의 절차와 형사공탁 안내. 링크">1</a>
+
+								<a href="/portal/site/public2012/menuitem.550edf9da67b3ea7119c3981ec2007a0/?viewID=detail&amp;bdctnSeqno=1932" style="width:15px;margin:0 3.5px !important;" target="" class="" id="gp2" onfocus="activeGNB('gm2'); f_mouseEvent('gm2');" onblur="f_mouseEvent('');" onMouseOver="activeGNB('gm2'); f_mouseEvent('gm2');" onMouseOut="f_mouseEvent('');" title="형사사법포털 형사사건의 모든것! 언제,어디서나 편리하게 이용하세요!. 링크">2</a>
+
+								<a href="/portal/site/public2012/menuitem.fe6fe06ab3a93ea7119c3981ec2007a0/?viewID=detail&amp;bdctnSeqno=1543" style="width:15px;margin:0 3.5px !important;" target="" class="" id="gp3" onfocus="activeGNB('gm3'); f_mouseEvent('gm3');" onblur="f_mouseEvent('');" onMouseOver="activeGNB('gm3'); f_mouseEvent('gm3');" onMouseOut="f_mouseEvent('');" title="형사사법포털 간편인증 서비스 개시 안내. 링크">3</a>
+
+								<a href="/portal/site/public2012/menuitem.fe6fe06ab3a93ea7119c3981ec2007a0/?viewID=detail&amp;bdctnSeqno=1529" style="width:15px;margin:0 3.5px !important;" target="" class="" id="gp4" onfocus="activeGNB('gm4'); f_mouseEvent('gm4');" onblur="f_mouseEvent('');" onMouseOver="activeGNB('gm4'); f_mouseEvent('gm4');" onMouseOut="f_mouseEvent('');" title="형사사법포털 사칭 피싱 사이트 주의 안내 주의사항및 신고방법을 알려드립니다. 링크">4</a>
+
+								<a href="javascript:popUp('/portal/jsp/popup/kics2024.jsp', 570, 680, 30, 300)" style="width:15px;margin:0 3.5px !important;" target="" class="" id="gp5" onfocus="activeGNB('gm5'); f_mouseEvent('gm5');" onblur="f_mouseEvent('');" onMouseOver="activeGNB('gm5'); f_mouseEvent('gm5');" onMouseOut="f_mouseEvent('');" title="어려운 형사절차를 한 번에! 국민의 소중한 시간을 돌려드립니다. 2024 차세대 형사사법정보시스템(KICS)구축 새창열림">5</a>
+
+								<a href="javascript:popUpMain_new('/portal/jsp/popup/kics_movie5.jsp', 700, 760, 30, 300)" style="width:15px;margin:0 3.5px !important;" target="" class="" id="gp6" onfocus="activeGNB('gm6'); f_mouseEvent('gm6');" onblur="f_mouseEvent('');" onMouseOver="activeGNB('gm6'); f_mouseEvent('gm6');" onMouseOut="f_mouseEvent('');" title="형사절차 전자문서법 자문위원회, 법무부 형사사법공통시스템 운영단, 2020.0918(금), 장소:정부과천청사 새창열림">6</a>
+
+								<a href="https://koreha.or.kr/sub/02_01.do?MN1=3&MN2=16&MN3=207&MN=207" style="width:15px;margin:0 3.5px !important;" target="_blank" class="" id="gp7" onfocus="activeGNB('gm7'); f_mouseEvent('gm7');" onblur="f_mouseEvent('');" onMouseOver="activeGNB('gm7'); f_mouseEvent('gm7');" onMouseOut="f_mouseEvent('');" title="당신의 새 출발을 응원합니다. 사회복귀 지원안내, 한국법무보호복지공 새창열림">7</a>
+
+								<a href="javascript:popUpMain_new('/portal/jsp/popup/acrc_movie.jsp', 700, 760, 30, 300)" style="width:15px;margin:0 3.5px !important;" target="" class="" id="gp8" onfocus="activeGNB('gm8'); f_mouseEvent('gm8');" onblur="f_mouseEvent('');" onMouseOver="activeGNB('gm8'); f_mouseEvent('gm8');" onMouseOut="f_mouseEvent('');" title="지금 당신도....원하나요?  EBS 청렴캠페인 새창열림">8</a>
+
+								<a href="https://www.clean.go.kr/index.es?sid=a1" style="width:15px;margin:0 3.5px !important;" target="_blank" class="" id="gp9" onfocus="activeGNB('gm9'); f_mouseEvent('gm9');" onblur="f_mouseEvent('');" onMouseOver="activeGNB('gm9'); f_mouseEvent('gm9');" onMouseOut="f_mouseEvent('');" title="국민권익위원회 세상을 바꾸난 용기 부패·공익신고 새창열림">9</a>
+
+								<a href="http://www.gov.kr/" style="width:15px;margin:0 3.5px !important;" target="_blank" class="" id="gp10" onfocus="activeGNB('gm10'); f_mouseEvent('gm10');" onblur="f_mouseEvent('');" onMouseOver="activeGNB('gm10'); f_mouseEvent('gm10');" onMouseOut="f_mouseEvent('');" title="정부24 한눈에 보는 정부 서비스 새창열림">10</a>
+
+								<a href="javascript:popUp('http://www.mois.go.kr/frt/sub/popup/p_taegugki_banner/screen.do', 780, 740, 30, 300)" style="width:15px;margin:0 3.5px !important;" target="" class="" id="gp11" onfocus="activeGNB('gm11'); f_mouseEvent('gm11');" onblur="f_mouseEvent('');" onMouseOver="activeGNB('gm11'); f_mouseEvent('gm11');" onMouseOut="f_mouseEvent('');" title="국가상징 알아보기 새창열림">11</a>
+
+								<a href="javascript:popUp('/portal/jsp/popup/kics_movie3.jsp', 720, 640, 30, 300)" style="width:15px;margin:0 3.5px !important;" target="" class="" id="gp12" onfocus="activeGNB('gm12'); f_mouseEvent('gm12');" onblur="f_mouseEvent('');" onMouseOver="activeGNB('gm12'); f_mouseEvent('gm12');" onMouseOut="f_mouseEvent('');" title="형사사법포털 카툰 KICS 새창열림">12</a>
+
+								<a href="javascript:popUp('/portal/jsp/popup/kics_movie2.jsp', 670, 660, 30, 300)" style="width:15px;margin:0 3.5px !important;" target="" class="" id="gp13" onfocus="activeGNB('gm13'); f_mouseEvent('gm13');" onblur="f_mouseEvent('');" onMouseOver="activeGNB('gm13'); f_mouseEvent('gm13');" onMouseOut="f_mouseEvent('');" title="범죄피해자지원기관이 궁금하다면? 이제는 KICS 법무부 형사사법포털 새창열림">13</a>
+
+                        </dd>
+                    </dl>
+                </div>
+                <!--// 알림 -->
+                
+                <!-- 공지사항+자주묻는질문 -->
+                <div class="content_box cont_list_group">
+                    <!-- 공지사항 -->
+                    <div class="cont_list_notice active">
+                        <dl>
+                            <dt class="cont_tlt">
+                                <span><a href="#none" onclick="boardTAB(this, 1)" onfocus="boardTAB(this, 1)" style="text-decoration:underline;">공지사항</a></span>
+                            </dt>
+							<!--공지사항 START-->
+							
+							
+							
+
+
+
+
+<dd>
+    <ul>
+
+		<li ><strong class="color_part2">[법원]</strong> <a href="/portal/site/public2012/menuitem.fe6fe06ab3a93ea7119c3981ec2007a0/?viewID=detail&amp;bdctnSeqno=1568">법원 형사공탁 안내</a><span>2022.12.09</span></li>
+
+		<li ><strong class="color_part4">[KICS]</strong> <a href="/portal/site/public2012/menuitem.fe6fe06ab3a93ea7119c3981ec2007a0/?viewID=detail&amp;bdctnSeqno=1567">[당첨자 발표] 2022년 형사사법포털 이용자 만족도 조사</a><span>2022.12.01</span></li>
+
+		<li ><strong class="color_part4">[KICS]</strong> <a href="/portal/site/public2012/menuitem.fe6fe06ab3a93ea7119c3981ec2007a0/?viewID=detail&amp;bdctnSeqno=1561">고위공직자범죄수사처 사건조회 서비스 개시</a><span>2022.11.01</span></li>
+
+		<li ><strong class="color_part4">[KICS]</strong> <a href="/portal/site/public2012/menuitem.fe6fe06ab3a93ea7119c3981ec2007a0/?viewID=detail&amp;bdctnSeqno=1543">간편인증 서비스 개시 안내</a><span>2022.07.01</span></li>
+
+	</ul>
+</dd>
+<dd><a href="/portal/site/public2012/menuitem.fe6fe06ab3a93ea7119c3981ec2007a0/" class="btn_more">공지사항 더보기</a></dd>
+
+							
+							
+							
+							<!--공지사항 END-->
+                        </dl>
+                    </div>
+                    <!--// 공지사항 -->
+                    
+                    <!-- 자주묻는질문 -->
+                    <div class="cont_list_faq">
+                        <dl>
+                            <dt class="cont_tlt">
+                                <span><a href="#none" onclick="boardTAB(this, 2)" onfocus="boardTAB(this, 2)">자주 묻는 질문</a></span>
+                            </dt>
+							<!--자주물으시는 질문 START-->
+							
+							
+							
+
+
+
+
+<dd>
+    <ul>
+ 
+		<li><a href="javascript:popUpMain('/portal/site/public2012/menuitem.a9d4a28a2333dca7119c3981ec2007a0/?viewID=detail&amp;tabDiv=1&amp;listNo=0&amp;bdctnSeqno=73', 970, 740, 0, 300);">형사사법포털 모바일 앱에서 사건조회 등 버튼이 눌리지 않아요?</a></li>
+ 
+		<li><a href="javascript:popUpMain('/portal/site/public2012/menuitem.a9d4a28a2333dca7119c3981ec2007a0/?viewID=detail&amp;tabDiv=1&amp;listNo=1&amp;bdctnSeqno=70', 970, 740, 0, 300);">공동인증서 등록 시 '79050' 오류 코드가 나오고 공동인증서 등록을 진행할 수 없습니다.</a></li>
+ 
+		<li><a href="javascript:popUpMain('/portal/site/public2012/menuitem.a9d4a28a2333dca7119c3981ec2007a0/?viewID=detail&amp;tabDiv=1&amp;listNo=2&amp;bdctnSeqno=68', 970, 740, 0, 300);">PC 기반 형사사법포털에 등록된 공동인증서와 모바일 앱에서 사용하는 공동인증서는 동일해야 하나요</a></li>
+ 
+		<li><a href="javascript:popUpMain('/portal/site/public2012/menuitem.a9d4a28a2333dca7119c3981ec2007a0/?viewID=detail&amp;tabDiv=1&amp;listNo=3&amp;bdctnSeqno=67', 970, 740, 0, 300);">공동인증서 등록은 어디서 해야 하나요</a></li>
+
+	</ul>
+</dd>
+<dd><a href="javascript:popUpMain('/portal/site/public2012/menuitem.a9d4a28a2333dca7119c3981ec2007a0/?viewID=detail&amp;tabDiv=1&amp;bdctnSeqno=&amp;listNo=', 970, 740, 0, 300);" class="btn_more">자주물으시는 질문 더보기</a></dd>
+
+							
+							
+							
+							<!--자주물으시는 질문 END-->
+                        </dl>
+                    </div>
+                    <!--// 자주묻는질문 -->
+                </div>
+                <!--// 공지사항+자주묻는질문 -->
+                
+                <!-- 안내버튼그룹 -->
+                <div class="content_box">
+                    <ul class="cont_guide">
+                        <li class="cont_guide_sign">
+                            	<a href="javascript:popUp('/portal/jsp/popup/new_kics_guide.jsp', 700, 980, 30, 30);">                            	
+                                <strong>새로운 형사사법절차</strong>                                
+                            </a>
+                        </li>                    	
+                        <li class="cont_guide_mobile">
+                            <a href="javascript:popUp('/portal/jsp/popup/mblSvcGuid.jsp', 940, 640, 30, 300);">
+                                <strong>모바일서비스안내</strong>
+                            </a>
+                        </li>                        
+                        <li class="cont_guide_tel">
+                            <span>
+                                <strong><em>이용문의</em> 1588-4771</strong>
+                                평일(월~금) 09:00~18:00
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <!--// 안내버튼그룹 -->
+            </div>
+            <!--// contBlock_1 -->
+            
+            <!-- contBlock_2 : 사이트이용방법안내/형사사법홍보관 -->
+            <div class="content_wrap">
+                <!-- 사이트이용방법안내 -->
+                <div class="content_box cont_help">
+                    <dl>
+                        <dt><h2><span class="cont_tlt">사이트 이용안내</span><h2></dt>
+                        <dd>
+                            <ul>
+                                <li class="cont_help01">
+                                    <a href="javascript:popUpMain(getUrlByTitle('홈페이지 이용안내|h'), 970, 740, 0, 300);" title="새창열림">
+                                        <dl>
+                                            <dt>조회 서비스(4종)</dt>
+                                            <dd>검찰·경찰·법원 사건진행상황 검색</dd>
+                                            <dd>벌과금 조회</dd>
+                                        </dl>
+                                    </a>
+                                </li>
+                                <li class="cont_help02">
+                                    <a href="javascript:popUpMain('/portal/site/public2012/template.MAXIMIZE/menuitem.a9d4a28a2333dca7119c3981ec2007a0/?javax.portlet.tpst=311ca5da73ada2b7119c3981ec2007a0_ws_MX&javax.portlet.prp_311ca5da73ada2b7119c3981ec2007a0=viewID%3Dhelp1_33&javax.portlet.begCacheTok=com.vignette.cachetoken&javax.portlet.endCacheTok=com.vignette.cachetoken', 970, 740, 0, 300);" title="새창열림">
+                                        <dl>
+                                            <dt>온라인 민원신청(38종)</dt>
+                                            <dd>벌과금 납부명령서 전자발송 동의신청</dd>
+                                            <dd>진정서 · 탄원서 제출</dd>
+                                        </dl>
+                                    </a>
+                                </li>
+                                <li class="cont_help03">
+                                    <a href="javascript:popUpMain('/portal/site/public2012/template.MAXIMIZE/menuitem.a9d4a28a2333dca7119c3981ec2007a0/?javax.portlet.tpst=311ca5da73ada2b7119c3981ec2007a0_ws_MX&javax.portlet.prp_311ca5da73ada2b7119c3981ec2007a0_viewID=help2_11&javax.portlet.begCacheTok=com.vignette.cachetoken&javax.portlet.endCacheTok=com.vignette.cachetoken', 970, 740, 0, 300);" title="새창열림">
+                                        <dl>
+                                            <dt>증명서 발급(14종)</dt>
+                                            <dd>불기소 이유고지 청구</dd>
+                                            <dd>사건 처분결과 증명</dd>
+                                        </dl>
+                                    </a>
+                                </li>
+                                <li class="cont_help04">
+                                    <a href="javascript:popUpMain('/portal/site/public2012/template.MAXIMIZE/menuitem.a9d4a28a2333dca7119c3981ec2007a0/?javax.portlet.tpst=311ca5da73ada2b7119c3981ec2007a0_ws_MX&javax.portlet.prp_311ca5da73ada2b7119c3981ec2007a0=viewID%3Dhelp1_21&javax.portlet.begCacheTok=com.vignette.cachetoken&javax.portlet.endCacheTok=com.vignette.cachetoken', 970, 740, 0, 300);" title="새창열림">
+                                        <dl>
+                                            <dt>재판서 및 통지서 신청(27종)</dt>
+                                            <dd>피의사건처분결과 통지서</dd>
+                                            <dd>벌과금 납부명령서 송달</dd>
+                                        </dl>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <!--// 사이트이용방법안내 -->
+                
+                <!-- 형사사법홍보관 -->
+                <div class="content_box cont_pr">
+                    <!-- 형사사법홍보관 -->
+                    <dl>
+                        <dt><h2><span class="cont_tlt">형사사법 홍보관</span></h2></dt>
+                        <dd>
+                            <ul>
+                                <li><a href="javascript:popUp('/portal/jsp/popup/kics_movie3.jsp', 720, 640, 30, 300);" title="새창 열림">형사사법포털<br>동영상</a></li>
+                                <li><a href="javascript:popUp('/portal/jsp/popup/kics_movie2.jsp', 670, 660, 30, 300);" title="새창 열림">범죄피해자안내<br>동영상</a></li>
+                                <li><a href="javascript:popUp('/portal/jsp/popup/kics_brochure.jsp', 590, 828, 30, 300);" title="새창 열림">형사사법정보<br>시스템소개</a></li>
+                                <li><a href="javascript:popUp('/portal/jsp/popup/kics_ebook.jsp', 570, 680, 30, 300);" title="새창 열림">형사사법포털<br>e-book</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <!--// 형사사법홍보관 -->
+                </div>
+                <!--// 형사사법홍보관 -->
+            </div>
+            <!--// contBlock_2 -->
+        </div>
+        <!--// ########## CONTENTS ########## -->
+        
+        <!-- ########## FOOTER ########## -->
+        <div id="footer_wrap">
+            <div class="bg_darkgray" style="min-width:1500px;">
+                <div class="footer">
+                    <ul class="footer_nav">
+                        <li><a href="javascript:popUp(getUrlByTitle('이용불편신고|h')+'?viewID=NEW', 720, 630, 0, 300);" title="새창 열림">이용불편신고</a></li>
+                        <li><a href="javascript:titleLink('저작권정책|h');">저작권정책</a></li>
+                        <li><a href="javascript:titleLink('개인정보 처리방침|h');" class="color_personal">개인정보처리방침</a></li>
+                        <li><a href="javascript:titleLink('사이트맵|h');">사이트맵</a></li>
+                    </ul>
+                    <ul class="footer_other">
+                        <li>
+						    <label for="testSel" style="font-size:0px;">관련사이트 바로가기</label>
+                            <select id="testSel" style="margin-right:3px;" title="관련사이트 선택">
+                                <option value="">관련사이트</option>
+                                <option value="https://www.scourt.go.kr/scourt/index.html">법원</option>
+                                <option value="http://www.moj.go.kr/">법무부</option>
+                                <option value="http://www.spo.go.kr/">검찰</option>
+                                <option value="https://www.police.go.kr/">경찰</option>
+                                <option value="http://www.kcg.go.kr/kcg/main.do">해양경찰</option>
+                            </select>
+                        </li>
+						<li style="padding-left:1px;"><span class="sbtn"><a href="javascript:f_relSiteGo();" title="관련사이트 바로가기 새창열림"><strong>바로가기</strong></a></span></li>
+<!--                         <li><a href="http://www.facebook.com/KICSKOR" target="_blank" class="btn_facebook" title="새창 열림">페이스북</a></li>
+                        <li><a href="http://twitter.com/KICSstory" target="_blank" class="btn_tweeter" title="새창 열림">트위터</a></li>
+                        <li><a href="http://blog.naver.com/kics1" target="_blank" class="btn_blog" title="새창 열림">블로그</a></li>
+ -->                        
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <dl class="copyright_info">
+                    <dt>형사사법포털</dt>
+                    <dd>
+                        <!--법무부 형사사법 공통시스템 운영단  (우:13809) 경기도 과천시 관문로 47 정부과천청사 1동<br>
+                        Copyright ⓒ 2019 By KICS All Rights Reserved. -->
+                        (우:13809) 경기도 과천시 관문로 47 정부과천청사 1동<br><!-- 221012 -->
+                        Copyright ⓒ 2019 By KICS All Rights Reserved.                         
+                    </dd>
+                </dl>
+                <ul class="copyright_right">
+                    <li class="tel">1588-4771</li>
+					<li><a href="http://www.wa.or.kr/board/list.asp?BoardID=0006" target="_blank" title="새창 열림"><img src="/images/renew/common/renew_img_wa_2021.png" alt="(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크(WA인증마크)" width="65" height="48"></a></li>
+                </ul>
+            </div>
+        </div>
+        <!--// ########## FOOTER ########## -->
+    </div>
 </body>
+</html>
